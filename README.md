@@ -1,8 +1,8 @@
-# React + Vite
+# React Gift Expert
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+first project for practice of React.js for HUSO Group S.A.S.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Management of state with Objects and Arrays
+2. Hooks: useEffect y useState
+3. Custom Hooks 
+4. List of data with .map optimized for performance
