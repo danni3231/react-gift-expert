@@ -1,5 +1,6 @@
 import { GiftItem } from "./GiftItem";
 import { useFetchGifs } from '../Hooks/useFetchGifs';
+import { CardGrid } from "../Styles/CardStyles";
 
 export const GifGrid = ({ category }) => {
 
@@ -11,11 +12,11 @@ export const GifGrid = ({ category }) => {
 
 			{isLoading && <h2>Loading...</h2>}
 
-			<section className="card-grid">
+			<CardGrid className="card-grid">
 				{images.map((img) => (
 					<GiftItem key={img.id} {...img} />
 				))}
-			</section>
+			</CardGrid>
 		</>
 	);
 };

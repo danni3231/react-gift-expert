@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Input } from "../Styles/Index";
 
 export const AddCategory = ({ onNewCategory }) => {
 	const [inputValue, setInputValue] = useState("");
@@ -18,7 +19,7 @@ export const AddCategory = ({ onNewCategory }) => {
 
 	return (
 		<form onSubmit={onSubmit}>
-			<input
+			<Input
 				type='text'
 				placeholder='Buscar Gifs'
 				value={inputValue}

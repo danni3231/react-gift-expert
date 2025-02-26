@@ -1,10 +1,11 @@
 import React from "react";
+import { Card } from "../Styles/Index";
 
 export const GiftItem = ({url, title}) => {
 	return (
-		<div className='card'>
+		<Card className='card'>
 			<img src={url} alt={title} />
 			<p>{title}</p>
-		</div>
+		</Card>
 	);
 };
