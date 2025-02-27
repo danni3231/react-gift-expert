@@ -29,8 +29,9 @@ describe("Pruebad de <AddCategory/>", () => {
 		expect(onNewCategory).toHaveBeenCalledWith(inputValue);
 	});
 
-	test("no debe llamar onNewCaregory si el input esta vacio", () => {
-        const onNewCategory = jest.fn();
+	test("no debe llamar onNewCategory si el input esta vacio", () => {
+        
+		const onNewCategory = jest.fn();
 
 		render(<AddCategory onNewCategory={onNewCategory} />);
 
@@ -38,6 +39,6 @@ describe("Pruebad de <AddCategory/>", () => {
 
         fireEvent.submit(form);
 
-        expect(onNewCategory).not.toHaveBeenCalled(0);
+        expect(onNewCategory).not.toHaveBeenCalled();
     });
 });
